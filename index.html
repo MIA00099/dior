@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dior Fruit | A Beautiful Muse</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind Config for Custom Colors and Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#69d0dd', /* The signature cyan/light blue from the template */
+                        darkbg: '#050505',
+                        darkerbg: '#000000',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        script: ['Great Vibes', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles to ensure perfect overlapping and imagery */
+        body {
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        
+        .img-grayscale {
+            filter: grayscale(100%) contrast(1.1) brightness(0.9);
+            transition: filter 0.5s ease;
+        }
+        
+        .img-grayscale:hover {
+            filter: grayscale(0%) contrast(1) brightness(1);
+        }
+
+        .bg-review {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('ChatGPT Image May 9, 2026, 12_14_42 AM.png');
+            background-size: cover;
+            background-position: center 20%;
+            background-attachment: fixed; /* Parallax effect */
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand selection:text-black">
+
+    <!-- Top Navigation Bar -->
+    <nav class="bg-black w-full py-5 px-6 z-50">
+        <div class="max-w-6xl mx-auto flex justify-center items-center">
+            <span class="text-sm md:text-base font-sans tracking-[0.3em] text-white uppercase font-medium">Fruit Dior</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="h-[70vh] md:h-[85vh] w-full relative flex flex-col items-center justify-center overflow-hidden">
+        <!-- Video Background -->
+        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none">
+            <source src="mp_.mp4" type="video/mp4">
+        </video>
+        <!-- Dark Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/80 z-0 pointer-events-none"></div>
+
+        <div class="text-center relative z-10 w-full flex flex-col items-center" data-aos="fade-down" data-aos-duration="1500">
+            <p class="font-sans text-[10px] md:text-xs uppercase tracking-[0.4em] text-white mb-2">A Beautiful Moment</p>
+            
+            <!-- Overlapping Logo Design -->
+            <div class="relative w-full flex justify-center items-center mt-4">
+                <h1 class="font-serif text-5xl md:text-8xl lg:text-9xl text-white opacity-90 tracking-widest uppercase relative">
+                    Dior
+                </h1>
+                <h2 class="font-script text-brand text-6xl md:text-8xl lg:text-[140px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap mt-4 md:mt-8 -rotate-2 drop-shadow-lg">
+                    Fruit
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Meet Your Stylist Section -->
+    <section class="bg-darkerbg py-16 md:py-24 px-6 md:px-12 lg:px-24">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+            
+            <!-- Text Content -->
+            <div class="order-2 md:order-1 flex flex-col justify-center text-center md:text-left" data-aos="fade-right">
+                <h3 class="font-serif text-brand text-3xl md:text-5xl lowercase mb-8 leading-tight">her lovely<br>story</h3>
+                
+                <p class="font-sans text-gray-300 text-sm md:text-base leading-relaxed mb-6 font-light">
+                    Some people do not need to try too hard to be noticed — their presence speaks softly, beautifully, and unforgettable. Dior carries that rare kind of charm: a gentle smile, a graceful heart, and a light that makes the whole room feel warmer.
+                </p>
+                
+                <p class="font-sans text-gray-300 text-sm md:text-base leading-relaxed mb-10 font-light">
+                    Her beauty is not only in the way she looks, but in the calm confidence she carries, the kindness behind her eyes, and the quiet elegance that stays in your mind long after the moment has passed.
+                </p>
+                
+                <!-- Stylist Signature -->
+                <div class="relative w-full flex justify-center md:justify-start items-center">
+                    <span class="font-serif text-2xl tracking-widest text-white uppercase">Dior</span>
+                    <span class="font-script text-brand text-4xl absolute ml-12 mt-4 -rotate-2">Fruit</span>
+                </div>
+            </div>
+
+            <!-- Stylist Image -->
+            <div class="order-1 md:order-2 w-full h-[500px] md:h-[700px] relative overflow-hidden" data-aos="fade-left">
+                <img src="file_00000000632071f58afd1d95db0db994.png" 
+                     alt="Dior Fruit - Hair Stylist" 
+                     class="object-cover w-full h-full img-grayscale absolute inset-0">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-darkbg py-20 md:py-32 px-6 md:px-12 border-t border-gray-900">
+        <div class="max-w-6xl mx-auto">
+            
+            <!-- Mobile Title (Hidden on Desktop to match layout) -->
+            <div class="md:hidden text-center mb-12" data-aos="fade-up">
+                <h3 class="font-serif text-brand text-4xl lowercase">romantic<br>beauty</h3>
+            </div>
+
+            <!-- Staggered Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 relative">
+                
+                <!-- Service 1 -->
+                <div class="flex flex-col items-center text-center md:mt-24" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-transparent hover:border-brand transition-all duration-500 mb-6 p-1">
+                        <img src="ChatGPT Image May 9, 2026, 12_14_14 AM.png" 
+                             alt="Radiant Aura" class="w-full h-full object-cover rounded-full img-grayscale">
+                    </div>
+                    <h4 class="font-serif text-white text-xl mb-3 tracking-wide">Radiant Aura</h4>
+                    <p class="font-sans text-gray-400 text-xs md:text-sm font-light leading-relaxed px-4">
+                        Her smile feels like a soft sunrise — bright, warm, and impossible to ignore. It has a way of making ordinary moments feel special, just by being real.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="flex flex-col items-center text-center md:mt-64 relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="hidden md:block absolute -top-40 left-1/2 -translate-x-1/2 w-[1px] h-32 bg-gray-800"></div>
+                    <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-transparent hover:border-brand transition-all duration-500 mb-6 p-1">
+                        <img src="file_00000000b74071f8a521960cc135e29d.png" 
+                             alt="Effortless Grace" class="w-full h-full object-cover rounded-full img-grayscale">
+                    </div>
+                    <h4 class="font-serif text-white text-xl mb-3 tracking-wide">Effortless Grace</h4>
+                    <p class="font-sans text-gray-400 text-xs md:text-sm font-light leading-relaxed px-4">
+                        She moves with natural grace, never forced and never loud. There is a quiet confidence in her that feels elegant, inspiring, and beautifully unforgettable.
+                    </p>
+                </div>
+
+                <!-- Desktop Title & Service 3 Container -->
+                <div class="flex flex-col items-center md:items-end text-center md:text-right" data-aos="fade-up" data-aos-delay="300">
+                    <!-- Desktop Title -->
+                    <div class="hidden md:block mb-24 w-full text-center">
+                        <h3 class="font-serif text-brand text-4xl lg:text-5xl lowercase leading-tight">romantic<br>beauty</h3>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="flex flex-col items-center text-center md:mt-auto">
+                        <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-transparent hover:border-brand transition-all duration-500 mb-6 p-1">
+                            <img src="file_00000000c9a071fd8435ae4f94fbcc32.png" 
+                                 alt="Timeless Elegance" class="w-full h-full object-cover rounded-full img-grayscale">
+                        </div>
+                        <h4 class="font-serif text-white text-xl mb-3 tracking-wide">Timeless Elegance</h4>
+                        <p class="font-sans text-gray-400 text-xs md:text-sm font-light leading-relaxed px-4">
+                            Her beauty does not follow trends — it creates its own feeling. Simple, timeless, and full of heart, she shines from the inside out.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Review Section -->
+    <section class="bg-review py-24 md:py-40 px-6 relative flex flex-col justify-center items-center">
+        
+        <!-- Outlined Box Content -->
+        <div class="relative z-10 border border-brand p-10 md:p-16 max-w-3xl w-full text-center bg-black/40 backdrop-blur-sm" data-aos="zoom-in" data-aos-duration="1000">
+            <h3 class="font-serif text-brand text-3xl md:text-4xl lowercase mb-8">a beautiful<br>feeling</h3>
+            
+            <p class="font-sans text-white text-sm md:text-lg font-light leading-relaxed italic px-4 md:px-10">
+                "Dior is the kind of beauty you do not just see — you feel it. In her smile, in her softness, in the way she carries herself with grace, she leaves a memory that feels gentle, rare, and impossible to forget."
+            </p>
+        </div>
+
+        <!-- Call to action script -->
+        <div class="relative z-10 mt-12 text-center" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="font-script text-brand text-5xl md:text-7xl drop-shadow-md -rotate-2">
+                simply unforgettable
+            </h2>
+        </div>
+    </section>
+
+    <!-- Footer Bar -->
+    <footer class="bg-brand w-full py-4 text-center">
+        <p class="font-sans text-[10px] md:text-xs text-black font-semibold tracking-widest uppercase">
+            © 2026 Dior Fruit | Celebrating Grace, Beauty & Light
+        </p>
+    </footer>
+
+    <!-- AOS Animation Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+        });
+    </script>
+</body>
+</html>
